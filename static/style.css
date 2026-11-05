@@ -1,0 +1,262 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f8f9fc;
+    color: #252b3b;
+    min-height: 100vh;
+}
+
+/* Navigation */
+.navbar {
+    background: #ffffff;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e9eaf0;
+}
+
+.logo {
+    font-size: 21px;
+    font-weight: 700;
+    color: #5145cd;
+}
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #62697a;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #5145cd;
+}
+
+/* Main content */
+.container {
+    width: 85%;
+    max-width: 1050px;
+    margin: 55px auto;
+}
+
+/* Welcome section */
+.hero {
+    background: #ffffff;
+    padding: 55px 45px;
+    border: 1px solid #e9eaf0;
+    border-radius: 12px;
+}
+
+.hero h1 {
+    font-size: 32px;
+    margin-bottom: 14px;
+    color: #252b3b;
+}
+
+.hero p {
+    max-width: 580px;
+    color: #70788a;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    margin-top: 24px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-primary,
+.btn-purple {
+    background: #5145cd;
+    color: white;
+}
+
+.btn-primary:hover,
+.btn-purple:hover {
+    background: #4035ad;
+}
+
+/* Feature cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 28px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 25px;
+    border: 1px solid #e9eaf0;
+    border-radius: 10px;
+}
+
+.card h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #343b50;
+}
+
+.card p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #7a8292;
+}
+
+/* Registration form */
+.form-card {
+    background: #ffffff;
+    max-width: 560px;
+    margin: auto;
+    padding: 35px;
+    border: 1px solid #e9eaf0;
+    border-radius: 12px;
+}
+
+.form-card h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #7a8292;
+    font-size: 14px;
+    margin-bottom: 28px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dfe2e9;
+    border-radius: 7px;
+    font-size: 14px;
+    outline: none;
+    background: white;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #5145cd;
+}
+
+/* Form submit button */
+.form-card .btn {
+    width: 100%;
+    margin-top: 8px;
+}
+
+/* Student records */
+.table-card {
+    background: #ffffff;
+    padding: 28px;
+    border: 1px solid #e9eaf0;
+    border-radius: 10px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 22px;
+    min-width: 500px;
+}
+
+th {
+    background: #f5f5fa;
+    color: #5145cd;
+    font-size: 13px;
+    text-align: left;
+    padding: 15px;
+}
+
+td {
+    padding: 15px;
+    font-size: 14px;
+    border-bottom: 1px solid #eceef3;
+    color: #60697a;
+}
+
+.course-tag {
+    background: #f0efff;
+    color: #5145cd;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #9299a7;
+    font-size: 13px;
+    margin-top: 35px;
+}
+
+/* Responsive design */
+@media (max-width: 700px) {
+    .navbar {
+        padding: 18px 5%;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 18px;
+    }
+
+    .container {
+        width: 92%;
+        margin: 30px auto;
+    }
+
+    .hero {
+        padding: 35px 25px;
+    }
+
+    .hero h1 {
+        font-size: 26px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .form-card {
+        padding: 25px;
+    }
+}

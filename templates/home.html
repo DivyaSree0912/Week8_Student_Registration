@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Portal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">Student Portal</div>
+
+    <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/register">Register</a>
+        <a href="/students">Students</a>
+    </div>
+</nav>
+
+<div class="container">
+
+    <section class="hero">
+        <h1>Welcome to Student Portal</h1>
+
+        <p>
+            Manage your student information and register for
+            your preferred courses through one simple platform.
+            Start your learning journey today!
+        </p>
+
+        <a href="/register" class="btn btn-primary">
+            Register for a Course →
+        </a>
+    </section>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>01. Student Registration</h3>
+            <p>Enter your personal details and register as a student.</p>
+        </div>
+
+        <div class="card">
+            <h3>02. Course Selection</h3>
+            <p>Choose from available courses according to your interests.</p>
+        </div>
+
+        <div class="card">
+            <h3>03. View Records</h3>
+            <p>View registered students and their selected courses.</p>
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    © 2026 Student Portal | Flask Course Registration System
+</footer>
+
+</body>
+</html>
